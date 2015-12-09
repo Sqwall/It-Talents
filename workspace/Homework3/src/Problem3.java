@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please input a number.");
+
+		int num = sc.nextInt();
+
+		int[] array = new int[10];
+
+		array[0] = num;
+		array[1] = num;
+
+		int i = 0;
+
+		for (i = 2; i < array.length; i++) {
+			array[i] = array[i - 1] + array[i - 2];
+		}
+
+		for (int j = 0; j < array.length; j++) {
+			System.out.print(array[j] + " ");
+		}
+
+	}
+
+}

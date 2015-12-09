@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+
+public class Problem11
+{
+
+    static void arrayDisplay(int[][] array)
+    {
+
+        System.out.println("The contents of the array are: ");
+
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input number of rows of the array.");
+        int row = sc.nextInt();
+        System.out.println("Please input number of cols of the array.");
+        int col = sc.nextInt();
+
+        int[][] array = new int[row][col];
+
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.println("Please input value of elment at row " + (i + 1) + " and clumn: " + (j + 1));
+                array[i][j] = sc.nextInt();
+            }
+        }
+
+        arrayDisplay(array);
+
+    }
+
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+
+public class Problem6
+{
+
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input a string of several words divided by spaces.");
+        String str = sc.nextLine();
+        
+        if (!(str.contains(" ")))
+        {
+            System.out.println("String has no spaces in it. Please restart and input a valid string.");
+            return;
+        }
+        
+        String [] array = str.split(" ");
+                
+        for (int i = 0; i < array.length; i++){
+            System.out.print(Character.toUpperCase(array[i].charAt( 0 )) + array[i].substring(1, array[i].length()).toLowerCase()+ " ");
+        }
+        
+    }
+
+}
+
+
+
