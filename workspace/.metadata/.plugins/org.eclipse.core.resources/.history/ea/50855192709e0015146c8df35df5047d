@@ -1,0 +1,22 @@
+/*
+ * TicTacToe.java
+ *
+ * created at 9.12.2015 ã. by admin <YOURMAILADDRESS>
+ * 
+ */
+package test;
+
+
+public class TicTacToe
+{
+
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+
+
+

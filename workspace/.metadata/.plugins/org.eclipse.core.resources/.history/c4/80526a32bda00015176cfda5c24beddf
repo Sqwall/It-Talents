@@ -1,0 +1,62 @@
+/*
+ * Computer.java
+ *
+ * created at 12.12.2015 ã. by admin <YOURMAILADDRESS>
+ * 
+ */
+
+public class Computer
+{
+
+    int year;
+    int price;
+    boolean isNotebook;
+    int hardDiskMemory;
+    int freeMemory;
+    String operationSystem;
+
+
+    public String changeOperationSystem(String newOperationSystem)
+    {
+
+        this.operationSystem = newOperationSystem;
+
+        return operationSystem;
+    }
+    
+    public int useMemory(int memory){
+        
+        freeMemory = freeMemory - memory;
+        while (freeMemory < 0){
+            System.out.println("There is not enough memory.Please input a correct value");
+            continue;
+        }
+        
+        return freeMemory;
+        
+    }
+
+
+    public static void main(String[] args)
+    {
+
+        Computer PC = new Computer();
+        PC.year = 2014;
+        PC.price = 1500;
+        PC.isNotebook = false;
+        PC.hardDiskMemory = 200;
+        PC.freeMemory = 180;
+        PC.operationSystem = "Windows 7";
+        
+        Computer Laptop = new Computer();
+        Laptop.year = 2014;
+        Laptop.price = 1800;
+        Laptop.isNotebook = true;
+        Laptop.hardDiskMemory = 150;
+        Laptop.freeMemory = 130;
+        Laptop.operationSystem = "Windows 8";
+        
+        PC.useMemory(210);
+        System.out.println(PC.freeMemory);
+    }
+}

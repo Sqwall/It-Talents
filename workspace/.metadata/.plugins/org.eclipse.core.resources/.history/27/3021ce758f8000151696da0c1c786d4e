@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Problem15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please imput a number.");
+		int num = sc.nextInt();
+		
+		do  {
+			num = num - 1;
+			num = num + num;
+			System.out.println(num);
+		}while (num > 1);
+		
+		
+		
+	}
+
+}

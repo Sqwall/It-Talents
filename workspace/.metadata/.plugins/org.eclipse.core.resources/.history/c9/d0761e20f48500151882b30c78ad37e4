@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Problem2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please input size of the array.");
+		
+		int i = sc.nextInt(); //Size
+		
+		int [] Масив = new int [i]; 
+		
+		System.out.println("Please input the content of the array.");
+		for (int a = 0; a < Масив.length; a++){
+			Масив[a] = sc.nextInt();
+		}
+		
+		int j = i * 2; //Size of the second array.
+		
+		int [] Масив2 = new int [j];
+		
+		for (int a = 0; a < Масив.length; a++){
+			Масив[a] = Масив2[a];
+		}
+		
+		System.out.println(Масив2);
+	}
+
+}

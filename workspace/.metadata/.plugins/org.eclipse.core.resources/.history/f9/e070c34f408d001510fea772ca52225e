@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class Problem2
+{
+
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input a string between 10 and 20 laters, capital or not.");
+        String str = sc.nextLine();
+        
+        if (str.length() > 40){
+        System.out.println("Length of the string is higher than 40. Please restart and input a valid number of characters.");
+        return;
+        }
+        System.out.println("Please input another string of up to 40 laters, capital or not.");
+        String str3 = sc.nextLine();
+        
+        if (str3.length() > 40){
+        System.out.println("Length of the string is higher than 40. Please restart and input a valid number of characters.");
+        return;
+        }
+        
+    }
+
+}
+
+
+

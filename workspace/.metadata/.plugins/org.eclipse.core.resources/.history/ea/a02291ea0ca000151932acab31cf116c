@@ -1,0 +1,22 @@
+/*
+ * KnightMove.java
+ *
+ * created at 11.12.2015 ã. by admin <YOURMAILADDRESS>
+ * 
+ */
+package test;
+
+
+public class KnightMove
+{
+
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+
+
+

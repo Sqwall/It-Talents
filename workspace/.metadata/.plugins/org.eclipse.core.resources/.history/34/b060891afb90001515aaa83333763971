@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Problem11
+{
+
+   static void arrayDisplay (int [] array){
+                
+        
+       System.out.println("The contents of the array are: ");
+               
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i] +" ");
+        }
+    }
+    
+    public static void main(String[] args)
+    {
+        // TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input length of the array.");
+        int num = sc.nextInt();
+        
+        int [] array = new int[num]; 
+        
+        for (int i = 0; i < array.length; i++){
+            System.out.println("Please input value of elment: " +(i+1));
+            array[i] = sc.nextInt();
+        }
+        
+        
+        
+    }
+
+}

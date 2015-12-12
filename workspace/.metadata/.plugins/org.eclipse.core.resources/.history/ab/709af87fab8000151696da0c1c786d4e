@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Problem17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please input a number between 3 and 20.");
+		int num = sc.nextInt();
+		
+		if ((num < 3) || (num > 20)){
+			System.out.println("Invalid number. Please restart and input a valid number.");
+			return;
+		}
+		
+		Scanner ch = new Scanner(System.in);
+		System.out.println("Please input a character.");
+		char char1 = ch.next().charAt(0); 
+		
+		
+	}
+
+}
